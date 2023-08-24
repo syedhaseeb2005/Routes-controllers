@@ -3,8 +3,8 @@ import {register,login} from '../Controllers/AuthContoller.js'
 
 const authrouth = express.Router()
 
-authrouth.route('/register',register)
-authrouth.route('/login',login)
+authrouth.get('/register',register)
+authrouth.get('/login',login)
 
 
 export default authrouth
