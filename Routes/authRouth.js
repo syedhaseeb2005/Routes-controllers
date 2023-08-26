@@ -3,8 +3,8 @@ import {register,login} from '../Controllers/AuthContoller.js'
 
 const authrouth = express.Router()
 
-authrouth.get('/register',register)
-authrouth.get('/login',login)
+authrouth.post('/register',register)
+authrouth.post('/login',login)
 
 
 export default authrouth
